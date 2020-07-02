@@ -9,7 +9,7 @@
 
 import Foundation
 
-// Четное число или нет
+// Четное число или нет.
 
 func isEven (number: Int?) -> String {
     guard number != nil else { return "Entered incorrect value\n" }
@@ -21,7 +21,7 @@ func isEven (number: Int?) -> String {
     }
 }
 
-// Кратно 3 или нет
+// Кратно 3 или нет.
 
 func isDevisionThreeOn (number: Int?) -> String {
     guard number != nil else { return "Entered incorrect value\n" }
@@ -33,7 +33,7 @@ func isDevisionThreeOn (number: Int?) -> String {
     }
 }
 
-// Создание массива от 1 до 100
+// Создание массива от 1 до 100.
 
 func createArray () -> [Int] {
     var array = [Int]()
@@ -43,7 +43,7 @@ func createArray () -> [Int] {
     return array
 }
 
-//  Формирование массива из четных чисел и чисел кратных 3
+//  Формирование массива из четных чисел и чисел кратных 3.
 
 func deleteNumbersFrom (array: [Int]) -> [Int] {
     var newArray = [Int]()
@@ -55,7 +55,7 @@ func deleteNumbersFrom (array: [Int]) -> [Int] {
     return newArray
 }
 
-// Генерация числа Фибоначчи
+// Генерация числа Фибоначчи.
 
 func getFibonacciFor(number: Int?) -> Int {
     guard number != nil else { return 0 }
@@ -73,7 +73,7 @@ func getFibonacciFor(number: Int?) -> Int {
     return sum
 }
 
-// Заполнение массива числами Фибоначчи
+// Заполнение массива числами Фибоначчи.
 
 func createFibonacciArray (length: Int?) -> [Int] {
     guard length != nil else { return [0] }
@@ -86,7 +86,7 @@ func createFibonacciArray (length: Int?) -> [Int] {
     return array
 }
 
-// Массив простых чисел, методом Решето Эратосфена
+// Массив простых чисел, методом Решето Эратосфена.
 
 func getPrimeNumbers (limit: Int?) -> [Int] {
     guard limit != nil else { return [0] }
@@ -116,7 +116,7 @@ func getPrimeNumbers (limit: Int?) -> [Int] {
     return primeArray
 }
 
-// Четность, кратность, массив
+// Четность, кратность, массив.
 
 print ("Enter a number for check:")
 
@@ -127,7 +127,7 @@ print (isEven(number: userNumber))
 print (isDevisionThreeOn(number: userNumber))
 print ("Result array:\n", deleteNumbersFrom(array: array), "\n")
 
-//  Числа Фибоначчи
+//  Числа Фибоначчи.
 
 print ("How many numbers of Fibonacci would you add to array?:\n")
 
@@ -135,7 +135,7 @@ let rangeFibonacci = Int(readLine()!)
 
 print ("Fibonacci array:\n", createFibonacciArray(length: rangeFibonacci), "\n")
 
-// Правильные числа, Решето Эратосфена
+// Правильные числа, Решето Эратосфена.
 
 print ("Enter limit for prime numbers range:\n")
 
