@@ -96,6 +96,19 @@ print(carFord.engineState)
 
 print ("\(carBMW.brand) \(carBMW.model) is \(carBMW.color)")
 
+var truckScania = Truck()
+
+truckScania.startEngine()
+
+if truckScania.loadInBodywork(volume: 3000) {
+    print (truckScania.usedVolumeBodywork)
+} else {
+    print ("Too much cargo")
+}
+
+if truckScania.unloadFromBodywork(volume: 500) {
+    print (truckScania.usedVolumeBodywork)
+}
 
 
 

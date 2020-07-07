@@ -5,9 +5,6 @@
 //  Created by Vitaly Prosvetov on 06.07.2020.
 //  Copyright © 2020 Vitaly Prosvetov. All rights reserved.
 
-
-import Foundation
-
 enum TruckBrand {
     case Scania, Volvo, Man
 }
@@ -57,16 +54,3 @@ struct Truck {
     }
 }
 
-var truckScania = Truck()
-
-truckScania.startEngine()
-
-if truckScania.loadInBodywork(volume: 3000) {
-    print (truckScania.usedVolumeBodywork)
-} else {
-    print ("Too much cargo")
-}
-
-if truckScania.unloadFromBodywork(volume: 500) {
-    print (truckScania.usedVolumeBodywork)
-}
