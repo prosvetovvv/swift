@@ -77,7 +77,7 @@ struct Car {
 
 var carFord = Car()
 
-var carBMW = (brand: Brand.BMW, model: Model.X5, color: ColorCar.Blue, year: 2019, trunkVolume: 750)
+var carBMW = Car(brand: Brand.BMW, model: Model.X5, color: ColorCar.Blue, year: 2019, trunkVolume: 750)
 
 if carFord.loadInTrunk(volume: 300) {
     print (carFord.usedVolumeTrunk)
